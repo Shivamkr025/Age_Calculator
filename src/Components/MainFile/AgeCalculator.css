@@ -12,7 +12,8 @@
     border-radius: 4px;
     border: none; 
     outline: none;
-    background-color: #740938;    
+    background-color: #740938; 
+    color: #fff;   
 }
 
 #btn{

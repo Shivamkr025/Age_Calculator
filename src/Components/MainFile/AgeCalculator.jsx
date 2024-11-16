@@ -22,7 +22,7 @@ function AgeCalculator() {
         if (findYear < 0) {
             alert('Please enter a valid date of birth.')
         } else {
-            setShowAge(findYear)
+            setShowAge({Year:findYear, Month:findMonth})
         }
     }
 
@@ -31,7 +31,7 @@ function AgeCalculator() {
             <div id="result">
                 {showAge === null
                     ? <p className="ageShow">😊Thank you for visiting! Please check your age here. 🎉</p>
-                    : <p className="ageShow">Your Age is: {showAge} years 🎉</p>}
+                    : <p className="ageShow">Your current age is {showAge.Year} years and {showAge.Month} months. 🎉</p>}
             </div>
 
             <div>
